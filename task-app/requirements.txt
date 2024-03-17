@@ -1,0 +1,4 @@
+datetime==5.4 ; python_version >= "3.12" and python_version < "4.0"
+pytz==2024.1 ; python_version >= "3.12" and python_version < "4.0"
+setuptools==69.2.0 ; python_version >= "3.12" and python_version < "4.0"
+zope-interface==6.2 ; python_version >= "3.12" and python_version < "4.0"
