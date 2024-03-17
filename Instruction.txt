@@ -1,0 +1,29 @@
+Instruction
+1) https://hub.docker.com/repository/docker/olexandryakovenko/task-app/general  
+2) https://github.com/OlexandrYakovenko/goit_dsml-hw-01
+
+poetry new task-app
+cd task-app
+poetry add datetime
+poetry export --without-hashes --format=requirements.txt > requirements.txt
+poetry install --no-root
+poetry update
+poetry show --tree
+poetry shell
+Ctrl+C
+exit
+
+/////
+docker build . -t olexandryakovenko/task-app
+docker run -itd -p 3000:5000 olexandryakovenko/task-app
+or
+docker run -it pedantic_ellis /bin/bash
+or
+docker exec -it pedantic_ellis /bin/bash
+
+then
+python Task1.py
+
+
+docker push olexandryakovenko/task-app
+
